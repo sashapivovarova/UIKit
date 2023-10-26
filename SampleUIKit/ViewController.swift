@@ -8,23 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-   
-    @IBOutlet weak var myImageView: UIImageView!
-    @IBOutlet weak var label: UILabel!    
-    @IBOutlet weak var myButton: UIButton!
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myButton.setTitle("sasha", for: .normal)
+        tableView.delegate = self
+        tableView.dataSource = self
     }
-    
-    @IBAction func buttonClick(_ sender: Any) {
-        print("Hello sasha")
-        label.text = "Hi, sasha!"
-        label.font = .systemFont(ofSize: 17)
-        label.textColor = .white
-    }
-    
 }
 
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    
+}
