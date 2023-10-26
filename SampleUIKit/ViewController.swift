@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     @IBAction func buttonClick(_ sender: Any) {
         print("Hello sasha")
         label.text = "Hi, sasha!"
+        label.font = .systemFont(ofSize: 17)
+        label.textColor = .white
     }
     
 }
