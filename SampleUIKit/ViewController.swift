@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        myButton.setTitle("sasha", for: .normal)
     }
     
     @IBAction func buttonClick(_ sender: Any) {
