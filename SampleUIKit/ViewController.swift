@@ -10,13 +10,14 @@ import UIKit
 class ViewController: UIViewController {
 
    
+    @IBOutlet weak var myImageView: UIImageView!
+    
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var myButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myButton.titleLabel?.text = "Click!"
     }
     
     @IBAction func buttonClick(_ sender: Any) {
