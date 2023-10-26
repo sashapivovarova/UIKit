@@ -11,9 +11,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
     }
-
-
+    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func buttonClick(_ sender: Any) {
+        print("Hello sasha")
+        label.text = "Hi, sasha!"
+    }
+    
 }
 
