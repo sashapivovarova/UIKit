@@ -24,12 +24,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe9-nc-UPp">
-                                <rect key="frame" x="159" y="410" width="74" height="35"/>
+                                <rect key="frame" x="159" y="410" width="74" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="button"/>
                                 <connections>
                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pn7-HT-QCy"/>
+                                    <segue destination="cj3-BP-4iv" kind="show" id="lMH-FN-WLP"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eunsol" translatesAutoresizingMaskIntoConstraints="NO" id="vQl-sc-Rcc">
@@ -50,9 +51,28 @@
             </objects>
             <point key="canvasLocation" x="54.198473282442748" y="-2.1126760563380285"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Wdz-uH-QlS">
+            <objects>
+                <viewController id="cj3-BP-4iv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zIf-oy-2bn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eD2-gH-IHc"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wyf-ew-6g9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNg-89-N1R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="-2"/>
+        </scene>
     </scenes>
     <resources>
         <image name="eunsol" width="317" height="442"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
