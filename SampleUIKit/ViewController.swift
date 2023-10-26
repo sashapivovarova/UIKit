@@ -24,7 +24,14 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyFirstCell", for: indexPath)
+        
+        if indexPath.row == 0 {
+            cell.textLabel?.text = "Start"
+        } else {
+            cell.textLabel?.text = "Hello, Sasha!"
+        }
+        return cell
     }
 }
 
