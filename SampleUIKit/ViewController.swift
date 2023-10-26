@@ -9,10 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   
+    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var myButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        myButton.titleLabel?.text = "Click!"
     }
-    @IBOutlet weak var label: UILabel!
     
     @IBAction func buttonClick(_ sender: Any) {
         print("Hello sasha")
