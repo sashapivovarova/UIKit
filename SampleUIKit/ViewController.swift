@@ -41,7 +41,10 @@ extension ViewController: UITableViewDelegate {
             print("This row is 0")
         } else {
             print(indexPath.row)
+            tableView.deselectRow(at: indexPath, animated: true)
         }
     }
+    
+    
     
 }
