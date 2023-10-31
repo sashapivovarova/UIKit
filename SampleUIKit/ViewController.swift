@@ -9,28 +9,32 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    private var names: [String] = ["Sasha", "Victory", "Min"]
+    
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var nameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    @IBAction func didTapButton(_ sender: Any) {
+        names.append(nameTextField.text ?? "empty")
+        tableView.reloadData()
+    }
 }
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return names.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyFirstCell", for: indexPath)
         
-        if indexPath.row == 0 {
-            cell.textLabel?.text = "Start"
-        } else {
-            cell.textLabel?.text = "Hello, Sasha!"
-        }
+        cell.textLabel?.text = names[indexPath.row]
         return cell
     }
 }
