@@ -36,5 +36,12 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            print("This row is 0")
+        } else {
+            print(indexPath.row)
+        }
+    }
     
 }
