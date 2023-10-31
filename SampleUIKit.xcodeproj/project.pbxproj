@@ -17,6 +17,7 @@
 		5A1262E52AE9197A00BBF23A /* SampleUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1262E42AE9197A00BBF23A /* SampleUIKitUITests.swift */; };
 		5A1262E72AE9197A00BBF23A /* SampleUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1262E62AE9197A00BBF23A /* SampleUIKitUITestsLaunchTests.swift */; };
 		5A1262F42AEA2F5C00BBF23A /* MySampleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1262F32AEA2F5C00BBF23A /* MySampleLabel.swift */; };
+		5A1262F62AF0C84000BBF23A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1262F52AF0C84000BBF23A /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5A1262E42AE9197A00BBF23A /* SampleUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUIKitUITests.swift; sourceTree = "<group>"; };
 		5A1262E62AE9197A00BBF23A /* SampleUIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A1262F32AEA2F5C00BBF23A /* MySampleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySampleLabel.swift; sourceTree = "<group>"; };
+		5A1262F52AF0C84000BBF23A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				5A1262CE2AE9197900BBF23A /* LaunchScreen.storyboard */,
 				5A1262D12AE9197900BBF23A /* Info.plist */,
 				5A1262F32AEA2F5C00BBF23A /* MySampleLabel.swift */,
+				5A1262F52AF0C84000BBF23A /* DetailViewController.swift */,
 			);
 			path = SampleUIKit;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				5A1262C82AE9197700BBF23A /* ViewController.swift in Sources */,
 				5A1262C42AE9197700BBF23A /* AppDelegate.swift in Sources */,
+				5A1262F62AF0C84000BBF23A /* DetailViewController.swift in Sources */,
 				5A1262F42AEA2F5C00BBF23A /* MySampleLabel.swift in Sources */,
 				5A1262C62AE9197700BBF23A /* SceneDelegate.swift in Sources */,
 			);

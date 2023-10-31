@@ -38,7 +38,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="69v-us-8Pl" kind="show" id="2ek-tj-7j7"/>
+                                            <segue destination="69v-us-8Pl" kind="show" identifier="showDetail" id="2ek-tj-7j7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -72,17 +72,29 @@
             </objects>
             <point key="canvasLocation" x="980.91603053435108" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="uwK-sA-BIM">
             <objects>
-                <viewController id="69v-us-8Pl" sceneMemberID="viewController">
+                <viewController id="69v-us-8Pl" customClass="DetailViewController" customModule="SampleUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="64e-JB-Bwf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi, Sasha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U43-ts-MMw">
+                                <rect key="frame" x="160" y="416" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Q9h-Dz-phz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="tgO-Od-ZhN"/>
+                    <connections>
+                        <outlet property="myNameLabel" destination="U43-ts-MMw" id="AZs-xE-Jbq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ys-fY-0gy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

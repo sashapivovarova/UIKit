@@ -24,6 +24,21 @@ class ViewController: UIViewController {
         names.append(nameTextField.text ?? "empty")
         tableView.reloadData()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: cell)
+            let index = indexPath?.row ?? 0
+            let detailView = segue.destination as! DetailViewController
+            detailView.setLabel(with: names[index])
+           
+            if index == 0 {
+                detailView.view.backgroundColor = .systemPink
+            }
+        }
+    }
 }
 
 extension ViewController: UITableViewDataSource {
